@@ -1,0 +1,46 @@
+/*******global.css**************************************************************/
+* { font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif; box-sizing: border-box;}
+
+html{ height:100%;
+-webkit-text-size-adjust:none;/*修正旋轉後文字會變大*/
+-webkit-overflow-scrolling:touch;/*修正ios滾動順暢*/
+}
+
+body { font-size:16px; line-height:1.5; background-color:#fff; color:#666;}
+
+ul{ list-style:none;}
+
+/*預設連結狀態*/
+a:link, a:visited { color: #000; text-decoration:none;}
+a:hover, a:active { color: #fe5000;}
+
+/*圖片無框*/
+a img { border:none;}
+/*去除圖片底下空白*/
+img{ vertical-align: bottom;} 
+
+/*h標題設定*/
+h1{ font-size:24px; font-weight:normal;}
+h2{ font-size:22px; font-weight:normal;}
+h3{ font-size:16px; font-weight:normal;}
+h4{ font-size:15px; font-weight:normal;}
+
+/*清除 clearfix*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+
+/* .gototop 滾回網頁最上面 ============*/
+.gototop{ width:45px; height:45px; opacity:0.6; text-indent:100%; border-radius:50%; white-space:nowrap; overflow:hidden; position:fixed; bottom:100px; right:10px; cursor:pointer; z-index:100; display:none;/*初始隱藏*/}
+.gototop::after{ content:""; display:block; width:45px; height:45px; margin:auto; background:url(../images/icon_gototop.png) center center no-repeat; background-size:100% auto; position:absolute; top:0; right:0; bottom:0; left:0;}
+
+@media only screen and (min-width:1000px){
+	.gototop{ position:fixed; right:30px; bottom:50px;}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link rel="apple-touch-icon" sizes="180x180" href="//cdn2.ettoday.net/style/mobileweb2014/images/touch-icon.png" />
+<link rel="shortcut icon" sizes="192x192" href="//cdn2.ettoday.net/style/mobileweb2014/images/touch-icon.png" />
+
+<!--css js 共用 開始-->
+<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/common.js"></script>
+<!--css js 共用 結束-->
+
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Ettoday 鏡文學 首頁</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<!--FB plugins 共用元素 開始 -->	
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=146858218737386";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--FB plugins 共用元素 結束 -->
+	<!--wrapper_box 開始-->
+	<div class="wrapper_box">
+	<!--wrapper 開始-->
+	<div class="wrapper">
+	<!-- TemplateBeginEditable name="EditRegion5" -->
+	<!-- TemplateEndEditable -->
+		
+		<!--side 側欄選單 開始-->
+		<div class="side">
+			<!--btn_close 關閉側欄按鈕-->
+			<div class="btn_close">選單關閉</div>
+			<!--btn_close 關閉側欄按鈕-->
+			
+			<!--手機 logo_mirror_m 開始 -->
+			<div class="logo_mirror_m"><a href="index.htm" title="ETtoday鏡文學">ETtoday鏡文學</a></div>
+			<!--手機 logo_mirror_m 開始 結束 -->
+			
+			<!--inner 開始-->
+		　	<div class="inner">
+				<!--nav_2 開始-->
+				<ul class="nav_2 clearfix">
+					<li><a href="category.htm">愛情</a></li>
+					<li><a href="category.htm">青春校園</a></li>
+					<li><a href="category.htm">靈異鬼怪</a></li>
+					<li><a href="category.htm">奇幻</a></li>
+					<li><a href="category.htm">科幻科技</a></li>
+					<li><a href="category.htm">仙俠玄幻</a></li>
+					<li><a href="category.htm">武俠</a></li>
+					<li><a href="category.htm">恐怖驚悚</a></li>
+					<li><a href="category.htm">推理犯罪</a></li>
+					<li><a href="category.htm">文學/寫實</a></li>
+					<li><a href="category.htm">LGBT</a></li>
+					<li><a href="category.htm">歷史</a></li>
+				</ul>
+				<!--nav_2 開始-->
+				<!--footer_side 開始-->
+				<div class="footer_side">
+					<a href="//events.ettoday.net/about-ettoday/index.htm" target="_blank">關於我們</a>
+					|
+					<a href="mailto:service@ettoday.net">聯絡信箱</a>
+					|
+					<a href="https://www.ettoday.net/events/app/index.htm?from=ettodaymw-sidebar">App下載</a>
+					<p>東森新媒體控股股份有限公司 版權所有<br>
+						非經授權，不許轉載本網站內容<br>
+						© ETtoday.net All Rights Reserved.</p>
+				</div>
+				<!--footer_side 結束-->
+		　	</div>
+		　	<!--inner 結束-->
+		</div>
+		<!--side 側欄選單 結束-->
+		
+		<!--topbar_box 開始-->
+		<div class="topbar_box">
+			<!--topbar 開始-->
+			<div class="topbar">
+				<!--menu_1 開始-->
+				<div class="menu_1">
+					<a href="http://www.ettoday.net/" target="_blank">ETtoday新聞雲</a>
+					│
+					<a href="http://www.ettoday.net/events/app/ettoday_app.htm" target="_blank">新聞雲Apps</a>
+				</div>
+				<!--menu_1 結束-->
+			</div>
+			<!--topbar 結束-->
+		</div>
+		<!--topbar_box 結束-->
+		
+		<!--header_box 開始-->
+		<div class="header_box">
+			<!--header 開始-->
+			<div class="header">
+				<!--btn_side_open 開始-->
+				<div class="btn_open">選單開啟</div>
+				<!--btn_side_open 結束-->
+
+				<!--logo_mirror 開始-->
+				<div class="logo_mirror">
+					<a href="index.htm" title="回首頁">ETtoday 鏡文學</a>
+				</div>
+				<!--logo_mirror 結束-->
+				<!--nav_1 選單 開始-->
+				<div class="nav_1">
+					<!--inner 開始-->
+					<ul class="inner">
+						<li><a href="category.htm">愛情</a></li>
+						<li><a href="category.htm">青春校園</a></li>
+						<li><a href="category.htm">靈異鬼怪</a></li>
+						<li><a href="category.htm">奇幻</a></li>
+						<li><a href="category.htm">科幻科技</a></li>
+						<li><a href="category.htm">仙俠玄幻</a></li>
+						<li><a href="category.htm">武俠</a></li>
+						<li><a href="category.htm">恐怖驚悚</a></li>
+						<li><a href="category.htm">推理犯罪</a></li>
+						<li><a href="category.htm">文學/寫實</a></li>
+						<li><a href="category.htm">LGBT</a></li>
+						<li><a href="category.htm">歷史</a></li>
+					</ul>
+					<!--inner 結束-->
+				</div>
+				<!--nav_1 選單 結束-->
+			</div>
+			<!--header 結束-->
+		</div>
+		<!--header_box 結束-->
+		
+		<!--container_box 開始-->
+		<div class="container_box">
+			<!--container 開始-->
+			<div class="container">
+				<!--r1 開始-->
+				<div class="r1 clearfix">
+				<!-- TemplateBeginEditable name="EditRegion1" -->
+				<!-- TemplateEndEditable -->
+				</div>
+				<!--r1 結束-->	
+			</div>
+			<!--container 結束-->
+		</div>
+		<!--container_box 結束-->
+		
+		<!--footer_box 開始-->
+		<div class="footer_box">
+			<!--footer 開始-->
+			<div class="footer">
+				<!--menu_1 開始-->
+				<div class="menu_1">
+					<a href="mailto:editor@ettoday.net">我要投稿</a> |
+					<a href="//smarturl.it/ettoday-104" target="_blank">人才招募</a> | 
+					<a href="//events.ettoday.net/about-ettoday/index.htm" target="_blank">關於我們</a>|
+					<br>
+					<a href="mailto:service@ettoday.net">廣告刊登/合作提案</a> |
+					<a href="mailto:service@ettoday.net">客服信箱</a> |
+					<a href="//www.ettoday.net/member/clause_member.php" target="_blank">服務條款</a> |
+					<br>
+					<a href="//www.ettoday.net/member/clause_privacy.php" target="_blank">隱私權政策</a> |
+					<a href="//www.ettoday.net/member/clause_copyright.php" target="_blank">著作權聲明</a> |
+					<a href="//www.ettoday.net/member/clause_duty.php" target="_blank">免責聲明</a>
+				</div>
+				<!--menu_1 結束-->
+				<address>
+					東森新媒體控股股份有限公司 版權所有<br> &copy; <a href="http://www.ettoday.net/" target="_top">ETtoday.net</a> All Rights Reserved.
+				</address>
+			</div>
+			<!--footer 結束-->
+		</div>
+		<!--footer_box 結束-->
+		
+		<!--滾回上面 gototop 開始-->
+		<div class="gototop">回到頂部</div>
+		<!--滾回上面 gototop 開始-->
+		
+	</div>
+	<!--wrapper 結束-->
+	</div>
+	<!--wrapper_box 結束-->
+</body>
+</html>

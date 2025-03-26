@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="js/jquery.js"></script>
+<title>測試文字</title>
+
+<style>
+*{padding:0; margin:0; box-sizing:border-box;}
+body{ max-width:1000px; margin:0px auto;}
+h1{ border:1px solid red; font-size:24px;}
+
+/**/
+.block{ border:1px solid #ccc;}
+.block_title{ margin-bottom:15px; }
+.block_content h3 { width:100%; margin:0 auto; padding:10px 0px; font-size:20px; border:1px solid #ccc;
+		overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.block_content h3 a{ text-decoration:none;}
+</style>
+
+</head>
+<body>
+	<h1>※不過使用 text-overflow: ellipsis; 屬性時、文字只能單行出現。若是想要多行文字、就必須要用javascript來判斷</h1>
+	<!--block 開始-->
+	<div class="block">
+		<!--block_title 開始-->
+		<div class="block_title">
+			<h2>我是開頭</h2>
+		</div>
+		<!--block_title 結束-->
+		<!--block_content 開始-->
+		<div class="block_content">
+			<h3><a href="#">一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</a></h3>
+			<h3><a href="#">一二三四五六七八九十</a></h3>
+			<h3><a href="#">一二三四五六七八九十</a></h3>
+			<h3><a href="#">一二三四五六七八九十</a></h3>
+		</div>
+		<!--block_content 結束-->
+	</div>
+	<!--block 結束-->
+
+	<script>
+	
+	$(function(){
+	
+
+
+	});
+	
+	</script>
+
+</body>
+</html>

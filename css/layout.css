@@ -1,0 +1,101 @@
+/*******layout.css********************/
+
+.wrapper_box{ max-width:1000px; min-height:100%; visibility:visible; overflow:hidden; margin:0px auto; position:relative;}
+
+/*wrapper*/
+.wrapper{ clear:both; min-height:100%;}
+
+/*header*/
+.header_box{ clear:both;}
+.header{ width:100%; height:95px; background-color:#fff; position:relative;}
+.header.add{ position:fixed; left:0px; top:0px; z-index:2; visibility:hidden;}
+
+
+@media only screen and (min-width: 1000px){
+	.header{ height:120px; margin-bottom:20px;}
+	.header.add{ width:1000px; position:fixed; left:50%; top:0px; margin-left:-500px;}
+	
+}
+
+/*container*/
+.container_box{ clear:both; margin-bottom:20px;}
+.container{}
+.container .r1{}
+.container .r1 .c1{}
+.container .r1 .c2{}
+
+@media only screen and (min-width: 1000px){
+	.container .r1 .c1{ width:calc( 100% - 320px); float:left;}
+	.container .r1 .c2{ width:300px; float:right;}
+}
+
+/*footer*/
+.footer_box{ clear:both;}
+.footer{ padding:30px 10px; text-align:center; background-color:#000;}
+.footer .menu_1{ margin-bottom:10px; color:#fff;}
+.footer .menu_1 a{ margin-right:5px; font-size:14px;}
+.footer .menu_1 a:link, .footer .menu_1 a:visited { color:#fff;}
+.footer .menu_1 a:hover, .footer .menu_1 a:active{ color:#fe5000;}
+.footer address{ color:#fff; font-style:normal; font-size:14px;}
+.footer address a{ color:#fff;}
+
+@media only screen and (min-width: 1000px){
+	.footer br{ display:none;}
+}
+
+
+/*topbar*/
+.topbar{ padding:10px; display:none;}
+.topbar .menu_1 a{ font-size:13px; color:#777;}
+
+.topbar .menu_1 a:hover, .topbar .menu_1 a:active{ color:#000;}
+@media only screen and (min-width: 1000px){
+	.topbar{ display:block;}
+}
+
+
+/*logo_mirror*/
+.header .logo_mirror{ width:210px; height:35px; position:absolute; top:8px; left:50%; margin-left:-105px;/*定位中間*/}
+.header .logo_mirror a{ display:block; width:100%; height:100%; background:url(../images/logo_mirror.png) no-repeat; background-size:100% auto; text-indent:100%; white-space:nowrap; overflow:hidden;}
+
+@media only screen and (min-width: 1000px){
+	.header .logo_mirror{ width:420px; height:70px; position:absolute; top:0px; left:10px; margin-left:0px;/*定位左邊*/}
+}
+
+/*nav_1*/
+.header .nav_1{ clear:both; width:100%; height:45px; text-align:center; background-color:#000; overflow:hidden; position:absolute; bottom:0px; left:0px; z-index:2;}
+.header .nav_1 .inner{ white-space:nowrap; overflow-x:auto; font-size:0px;}
+.header .nav_1 .inner li{ display:inline-block;}
+.header .nav_1 .inner li a{ display:inline-block; width:100%; height:45px; line-height:45px; padding:0px 16px; font-size:16px;}
+.header .nav_1 .inner li a.current{ background-color:#fe5000;}
+.header .nav_1 .inner li a:link, .header .nav_1 .inner li a:visited { color:#fff;}
+.header .nav_1 .inner li a:hover, .header .nav_1 .inner li a:active{ background-color:#fe5000;}
+
+/*btn_side_open*/
+.header .btn_open{ width:35px; height:35px; background:url(../images/icon_btn_side.png) no-repeat; background-size:100% auto; position:absolute; top:5px; left:10px; text-indent:100%; white-space:nowrap; overflow:hidden;}
+
+@media only screen and (min-width: 1000px){
+	.header .btn_open{ display:none;}
+}
+
+/*側欄選單 side*/
+.side{ width:100%; height:100%; background:rgba(255, 255, 255, 0.9); overflow:auto; z-index:120; position:fixed; left:0px; top:0px;display:none;}
+
+/*m_logo*/
+.side .logo_mirror_m{ width:210px; height:35px; position:absolute; top:8px; left:50%; margin-left:-105px;/*定位中間*/}
+.side .logo_mirror_m a{ display:block; width:auto; height:100%; background:url(../images/logo_mirror.png) no-repeat; background-size:100% auto; text-indent:100%; white-space:nowrap; overflow:hidden;}
+
+/*側欄選單 按鈕*/
+.side .btn_close{ width:35px; height:35px; background:url(../images/icon_btn_close.png) no-repeat; background-size:100% auto; position:absolute; top:3px; left:10px; text-indent:100%; white-space:nowrap; overflow:hidden;}
+
+/*側欄選單 side_inner*/
+.side .inner{ margin:25px auto 0px auto; text-align:center;}
+.side .inner ul.nav_2{ margin-bottom:20px; background-color:#000;}
+.side .inner ul.nav_2 li{ width:50%; height:50px; float:left;}
+.side .inner ul.nav_2 li a{ display:block; line-height:50px; color:#fff; border-right:1px solid #fdfed8; border-bottom:1px solid #fdfed8;}
+
+.side .inner .footer_side{ padding:10px 0px;}
+.side .inner .footer_side a{ color:#fe5000;}
+.side .inner .footer_side p{ font-size:13px; color:#333;}
+
+

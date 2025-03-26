@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/layout.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link rel="apple-touch-icon" sizes="180x180" href="//cdn2.ettoday.net/style/mobileweb2014/images/touch-icon.png" />
+<link rel="shortcut icon" sizes="192x192" href="//cdn2.ettoday.net/style/mobileweb2014/images/touch-icon.png" />
+
+<!--css js 共用 開始-->
+<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/common.js"></script>
+<!--css js 共用 結束-->
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Ettoday 鏡文學 新聞頁</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body class="news-page">
+<!--FB plugins 共用元素 開始 -->	
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=146858218737386";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--FB plugins 共用元素 結束 -->
+	<!--wrapper_box 開始-->
+	<div class="wrapper_box">
+		<!-- 模組 新聞內頁 分享按鈕 開始 -->
+		<div id="et_sticky_pc">
+			<ul>
+				<li><a class="btn logo" href="https://www.ettoday.net/" title="回首頁">回首頁</a></li>
+				<li><a class="btn fb" href="javascript:;" title="facebook"
+						onclick="location.href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href)"
+						target="_blank">facebook</a></li>
+				<li><a class="btn weibo" href="javascript:;" target="_blank" title="weibo">weibo</a></li>
+				<li><a class="btn twitter"
+						href="javascript: void(window.open('http://twitter.com/home/?status=' .concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"
+						title="twitter">twitter</a></li>
+				<li><a class="btn link" href="javascript:;" title="複製連結">複製連結</a></li>
+			</ul>
+		</div>
+		<!-- 模組 新聞內頁 分享按鈕 結束 -->
+
+	<!--wrapper 開始-->
+	<div class="wrapper">
+	<!-- InstanceBeginEditable name="EditRegion5" -->
+			
+		<!--et_sticky 模組-置頂吸住 開始-->
+		<div id="et_sticky">
+			<!--part_breadcrumb_2 麵包屑 開始-->
+			<div class="part_breadcrumb_2 clearfix">
+				<!--麵包屑 開始-->
+				<div class="menu_bread_crumb clearfix">
+					<!-- 第一層 開始 -->
+					<div>
+						<a href="https://www.ettoday.net/">
+							<span>ETtoday新聞雲</span>
+						</a>
+					</div>
+					<!-- 第一層 結束 -->
+					&gt;
+					<!-- 第二層 開始 -->
+					<div>
+						<a href="#">
+							<span>ETtoday鏡文學</span>
+						</a>
+					</div>
+					<!-- 第二層 結束 -->
+				</div>
+				<!--麵包屑 結束-->
+			</div>
+			<!-- part_breadcrumb_2 麵包屑 結束-->
+		</div>
+		<!--et_sticky 模組-置頂吸住 結束-->
+
+			<!-- InstanceEndEditable -->
+		
+		<!--side 側欄選單 開始-->
+		<div class="side">
+			<!--btn_close 關閉側欄按鈕-->
+			<div class="btn_close">選單關閉</div>
+			<!--btn_close 關閉側欄按鈕-->
+			
+			<!--手機 logo_mirror_m 開始 -->
+			<div class="logo_mirror_m"><a href="index.htm" title="ETtoday鏡文學">ETtoday鏡文學</a></div>
+			<!--手機 logo_mirror_m 開始 結束 -->
+			
+			<!--inner 開始-->
+		　	<div class="inner">
+				<!--nav_2 開始-->
+				<ul class="nav_2 clearfix">
+					<li><a href="category.htm">愛情</a></li>
+					<li><a href="category.htm">青春校園</a></li>
+					<li><a href="category.htm">靈異鬼怪</a></li>
+					<li><a href="category.htm">奇幻</a></li>
+					<li><a href="category.htm">科幻科技</a></li>
+					<li><a href="category.htm">仙俠玄幻</a></li>
+					<li><a href="category.htm">武俠</a></li>
+					<li><a href="category.htm">恐怖驚悚</a></li>
+					<li><a href="category.htm">推理犯罪</a></li>
+					<li><a href="category.htm">文學/寫實</a></li>
+					<li><a href="category.htm">LGBT</a></li>
+					<li><a href="category.htm">歷史</a></li>
+				</ul>
+				<!--nav_2 開始-->
+				<!--footer_side 開始-->
+				<div class="footer_side">
+					<a href="//events.ettoday.net/about-ettoday/index.htm" target="_blank">關於我們</a>
+					|
+					<a href="mailto:service@ettoday.net">聯絡信箱</a>
+					|
+					<a href="https://www.ettoday.net/events/app/index.htm?from=ettodaymw-sidebar">App下載</a>
+					<p>東森新媒體控股股份有限公司 版權所有<br>
+						非經授權，不許轉載本網站內容<br>
+						© ETtoday.net All Rights Reserved.</p>
+				</div>
+				<!--footer_side 結束-->
+		　	</div>
+		　	<!--inner 結束-->
+		</div>
+		<!--side 側欄選單 結束-->
+		
+		<!--topbar_box 開始-->
+		<div class="topbar_box">
+			<!--topbar 開始-->
+			<div class="topbar">
+				<!--menu_1 開始-->
+				<div class="menu_1">
+					<a href="http://www.ettoday.net/" target="_blank">ETtoday新聞雲</a>
+					│
+					<a href="http://www.ettoday.net/events/app/ettoday_app.htm" target="_blank">新聞雲Apps</a>
+				</div>
+				<!--menu_1 結束-->
+			</div>
+			<!--topbar 結束-->
+		</div>
+		<!--topbar_box 結束-->
+		
+		<!--header_box 開始-->
+		<div class="header_box">
+			<!--header 開始-->
+			<div class="header">
+				<!--btn_side_open 開始-->
+				<div class="btn_open">選單開啟</div>
+				<!--btn_side_open 結束-->
+
+				<!--logo_mirror 開始-->
+				<div class="logo_mirror">
+					<a href="index.htm" title="回首頁">ETtoday 鏡文學</a>
+				</div>
+				<!--logo_mirror 結束-->
+				<!--nav_1 選單 開始-->
+				<div class="nav_1">
+					<!--inner 開始-->
+					<ul class="inner">
+						<li><a href="category.htm">愛情</a></li>
+						<li><a href="category.htm">青春校園</a></li>
+						<li><a class="current" href="category.htm">靈異鬼怪</a></li>
+						<li><a href="category.htm">奇幻</a></li>
+						<li><a href="category.htm">科幻科技</a></li>
+						<li><a href="category.htm">仙俠玄幻</a></li>
+						<li><a href="category.htm">武俠</a></li>
+						<li><a href="category.htm">恐怖驚悚</a></li>
+						<li><a href="category.htm">推理犯罪</a></li>
+						<li><a href="category.htm">文學/寫實</a></li>
+						<li><a href="category.htm">LGBT</a></li>
+						<li><a href="category.htm">歷史</a></li>
+					</ul>
+					<!--inner 結束-->
+				</div>
+				<!--nav_1 選單 結束-->
+			</div>
+			<!--header 結束-->
+		</div>
+		<!--header_box 結束-->
+		
+		<!--container_box 開始-->
+		<div class="container_box">
+			<!--container 開始-->
+			<div class="container">
+				<!--r1 開始-->
+				<div class="r1 clearfix">
+				<!-- InstanceBeginEditable name="EditRegion1" -->
+					<!--c1 開始-->
+					<div class="c1">
+						<!-- breadcrumb_box 開始-->
+						<div class="breadcrumb_box clearfix">
+							<!--麵包屑 開始-->
+							<div class="part_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+								<!-- 第一層 開始-->
+								<div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+									<a itemscope itemtype="https://schema.org/Thing" itemprop="item"
+										href="https://www.ettoday.net">
+										<span itemprop="name">ETtoday新聞雲</span>
+									</a>
+									<meta itemprop="position" content="1" />
+								</div>
+								<!-- 第一層 結束-->
+								&gt;
+								<!-- 第二層 開始-->
+								<div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+									<a itemscope itemtype="https://schema.org/Thing" itemprop="item" href="index.htm">
+										<span itemprop="name">ETtoday鏡文學</span>
+									</a>
+									<meta itemprop="position" content="2" />
+								</div>
+								<!-- 第二層 結束-->
+								&gt;
+								<!-- 第三層 結束-->
+								<div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a
+										itemscope="itemscope" itemtype="https://schema.org/Thing" itemprop="item"><span
+											itemprop="name">恐怖驚悚</span> </a>
+									<meta itemprop="position" content="3" />
+								</div>
+								<!-- 第三層 結束-->
+							</div>
+							<!--麵包屑 結束-->
+						</div>
+						<!-- breadcrumb_box 結束-->
+
+						<!--subject_article 開始-->
+						<div class="subject_article">
+							<header>
+								<h1 class="title">不能讓老師發現的霸凌日記</h1>
+							</header>
+
+							<!--operate_1 開始-->
+							<div class="operate_1">
+								<!--sharebox_1 開始-->
+								<div class="sharebox_1 clearfix">
+									<!--menu_1 開始-->
+									<div class="menu_1 clearfix">
+										<a class="fb" href="#" target="_blank"></a>
+										<a class="fb-messenger" href="#"></a>
+										<a class="line" href="#"></a>
+										<a class="weibo" href="#"></a>
+									</div>
+									<!--menu_1 結束-->
+									<!--menu_2 開始-->
+									<div class="menu_2 clearfix">
+										<!--fb讚 開始-->
+										<div class="fb-like" data-href="#" data-layout="button_count" data-action="like"
+											data-show-faces="false" data-share="false"></div>
+										<!--fb讚 結束-->
+									</div>
+									<!--menu_2 結束-->
+								</div>
+								<!--sharebox_1 結束-->
+
+								<!--限制級 標誌-->
+								<p class="icon_adult">
+									<script src="//static.ettoday.net/style/adult/adult-alert.js"></script>
+									<link href="//cdn2.ettoday.net/style/adult/adult-alert.css" rel="stylesheet"
+										type="text/css">
+								</p>
+								<!--限制級 標誌-->
+							</div>
+							<!--operate_1 結束-->
+
+							<!--date 開始-->
+							<span class="date">
+								<time itemprop="datePublished" datetime="2019-04-22T14:37:00+08:00">2019年04月22日
+									14:37</time>
+							</span>
+							<!--date 結束-->
+
+							<!--story 開始-->
+							<div class="story" itemprop="articleBody">
+								<p><img src="images/pic_1.png" alt="八百鬼" /></p>
+								<p>文/崑崙</p>
+								<p>（一）它藏在裡面&nbsp;</p>
+								<p>
+
+									　　恍恍惚惚、恍恍惚惚。<br />
+
+									<br />
+
+									　　意識朦朧的培雅浸在濕冷黏稠的液體裡，那液體來自她的體內，當脫離身體的那一刻隨即變冷。她不得不醒來，睜眼所見竟是不斷從身下蔓延的暗紅，散發著令人作噁的腥臭味。<br />
+
+									<br />
+
+									　　她緩慢舉起右手，一陣小小的血雨當頭淋落。手腕處一道明顯的裂口，鮮血從中灑出，點點落在她蒼白的臉頰上。即使那道裂口深得無法看穿，培雅卻感覺不到疼痛，只猶豫該繼續躺著任血流乾至死，或是爬起來？<br />
+
+									<br />
+
+									　　手腕的裂口突然被撐大，原來有「什麼」藏在裡面。她驚慌地望向裂口，卻驚見一對藏在肉中深處的眼睛。她開始害怕，可是能逃到哪裡去？擺脫不掉的，那東西就在她的體內。<br />
+
+									<br />
+
+									　　數根沾血的纖細手指忽然從肉裡鑽出，奮力撐開兩邊的血肉。培雅嚇得亂揮右手，想將手臂連同裂口裡的「什麼」擺脫掉。可是太遲了，那東西終於得以脫身，赤裸墜地如嬰兒誕生。<br />
+
+									<br />
+
+									　　從中爬出的居然是個女孩，她抱著膝蓋不斷發抖，沾滿鮮血的長髮凝結成束，凌亂地披散在身。女孩的視線穿透掩面的長髮直瞪培雅，怨憤得令培雅寒毛直豎，害怕地避開。<br />
+
+									<br />
+
+									　　女孩突然發難，緊緊扼住培雅的脖子。培雅奮力抓住那女孩的雙腕，想阻止她。但女孩似乎非要培雅的命不可，掐得死緊，無法獲取氧氣的培雅臉龐越漸死白，她不懂也不明白，直到看清那名女孩的容貌，頓時愕然。<br />
+
+									<br />
+
+									　　培雅不再掙扎。<br />
+
+									<br />
+
+									　　原來那個女孩是她自己。<br />
+
+									<br />
+
+									<br />
+
+									＊<br />
+
+									<br />
+
+									　　驚醒的培雅慌亂地撫摸頸子，被用力掐住的窒息感仍然鮮明地殘留。她深深呼吸幾次平復情緒，重現夢境般不安地舉起右手，幸好手腕光滑無傷，只是惡夢。<br />
+
+									<br />
+
+									　　她抹去額頭冷汗，打開手機，時間顯示是凌晨五點十六分。房間悄然無聲，彷彿所有的聲音都在此死去。沒有窗戶，近門處的小夜燈是唯一光源，鵝黃色的光映照半邊的房間，另外一半掩藏在陰影裡，培雅正好在兩者交界。<br />
+
+									<br />
+
+									　　她轉過身，背著光將棉被抱進懷裡，用力地抱緊，然後又嫌還不足夠似地把頭跟著埋入棉被，爭取到稀微的安全感，直到雙臂開始乏力才慢慢鬆手。<br />
+
+									<br />
+
+									　　培雅改為仰躺，茫然望著天花板，小夜燈燈座的影子順著牆壁延伸，像附著牆面的畸形怪物。她還抱著棉被不放，這種胸口被壓迫的感覺多少令她安心，被不安挖蝕的缺口似乎短暫被填補起來。<br />
+
+									<br />
+
+									　　發呆之間，睡意逐漸消失殆盡。她知道是無法睡回籠覺了，索性起床換衣。脫掉上衣之後，露出的胸罩是學生常見的白色樸素款式，鎖骨跟肩膀有幾塊顯眼的瘀青，手臂則有幾道已經結痂的抓痕。雪白的大腿同樣有傷。<br />
+
+									<br />
+
+									她套上制服，從下到上依序將鈕扣扣起，然後是裙子跟過膝黑襪。她特地將襪口拉高好擋住膝蓋的瘀青。從表面來看，根本察覺不到身上竟然藏著這麼多傷。<br />
+
+									<br />
+
+									　　一打開房門，首先迎接她的是淅瀝的雨聲。她湊近窗戶，外頭落著灰色的陰雨，淋濕的巷道顯得顏色更深，像蒙著一層令人不快的沉重陰影，同樣顯得陰沉的還有培雅自己，雖然她的五官精緻，但眉頭間藏著陰影。<br />
+
+									<br />
+
+									　　這間屋子坪數不小，傢俱因為勤於維護所以像是新買的，比起日常的實際使用，它們更近似展示品。這是二姑姑的習慣使然。雖然整體而言算是不錯的環境，對培雅而言也只是好看罷了。她更想要的是個真正的家。<br />
+
+									<br />
+
+									　　經過二姑姑與姑丈的房間時，培雅刻意踮起腳尖好放輕聲音，因為二姑姑禁不起吵，哪怕是一點腳步聲都會讓她的神經質如狂風暴雨般引爆。最初住進二姑姑家時，培雅不幸地體會過，從此學會教訓。<br />
+
+									　　<br />
+
+									　　培雅從玄關口的傘桶拿了傘，小心翼翼地轉開門把，一如往常盡可能無聲地關門。在確認沒有驚動二姑姑之後，培雅緊繃的神經終於得以放鬆。<br />
+
+									<br />
+
+									　　培雅撐傘穿越社區中庭。雨勢不小，路邊積著大大小小的水窪，每當時踩過時就會有各種小碎屑沾附在皮鞋上，書包跟裙擺也被雨打溼，真是遭透的天氣。<br />
+
+									<br />
+
+									　　時間太早，還不到公車的發車時間。培雅轉進巷裡的超商，打算先解決早餐。在自動門打開的音效之後，竄入鼻腔的是暖和的咖啡香，還有茶葉蛋的醬油味道。<br />
+
+									<br />
+
+									　　「歡迎光臨！」店裡傳出店員的招呼聲，不過只聽見聲音卻沒看見人。<br />
+
+									<br />
+
+									　　培雅猜大概店員是蹲在貨架旁整理商品，也不再留意，逕自從鮮食櫃挑選了三明治跟奶茶。她正要去結帳時發現店員已經回到櫃台。是個戴著眼鏡的男大學生，看起來很客氣，有一種世故的成熟。可惜略顯寬鬆的制服讓他感覺有那麼一點邋遢。<br />
+
+									<br />
+
+									　　「一共四十九元，收您五十。您的發票，謝謝。」面帶微笑的男店員像設定好排程的機械，照著流程俐落結帳。<br />
+
+									<br />
+
+									　　培雅挑選窗邊的位子坐下，隨著天色越亮，經過的窗前的人車跟著增多。接連不斷的雨珠打在玻璃窗上，卻沒進入培雅的視線，只能認命地蜿蜒滑落，消失牆下陰暗的青苔裡。<br />
+
+									<br />
+
+									　　培雅盯著窗外，久久才咬下一口三明治，卻如同嚼蠟完全沒有滋味。她微皺著眉，看上去很是憂鬱。<br />
+
+									<br />
+
+									　　如果可以選擇的話，她真的不想去學校。培雅手按著鎖骨，瘀青的部份隱隱作痛。可是退縮的話就輸了，她不甘心，不肯退讓。這些念頭讓培雅沒了胃口，乾脆放棄無法下嚥的早餐，背起書包離開。<br />
+
+									<br />
+
+									　　經過櫃台時，店員突然叫住培雅。她困惑地停下。<br />
+
+									<br />
+
+									　　「你不要緊吧？」店員關心地問，就像撞見不小心跌落池子的小動物似的，急著想伸出援手的樣子。雖然是出自一番好意，但實在太突然了。培雅尷尬得無法應對，下意識地避開視線，正好瞄到店員的名牌。<br />
+
+									　　<br />
+
+									　　劉傳翰。是他的名字。<br />
+
+									<br />
+
+									　　「我不是要搭訕&hellip;&hellip;」店員尷尬的程度不下張培雅，著急地澄清：「因為你看起來狀況好像很糟&hellip;&hellip;」<br />
+
+									<br />
+
+									　　的確是很糟糕沒錯，真的這麼明顯？培雅都沒發覺原來她的心事都寫在臉上，憂鬱得令人無法忽視。最後她搖頭，選擇不再理會好心的店員。在踏出溫暖的超商後，冷風挾著冰冷的雨水撲面，培雅拿出髮圈將頭髮紮起，這比長髮披肩的樣子更讓她有安全感。然後她深深呼吸，將所有的釋出不安用力地吸進肺裡，強制地隱藏起來。<br />
+
+									<br />
+
+									　　絕對不能示弱。是時候該上學了。<br />
+
+									<br />
+
+									<br />
+
+									＊<br />
+
+									<br />
+
+									　　因為寄居在二姑姑家，培雅只能被迫轉學，幸好國中的轉學手續還算方便。不過二姑姑家距離學校有一定路程，所以培雅得搭乘公車通勤。<br />
+
+									<br />
+
+									　　雨天時的乘客較平常來得更多，公車行進的速度卻是更慢。培雅搭到車時已經沒有座位，只能跟著其他沒得坐下的乘客抓著扶手，隨著開開停停的公車不斷搖晃。<br />
+
+									<br />
+
+									　　培雅在七點半之前抵達學校，守在校門的生教組組長囂張地睥睨進門的學生，彷彿山寨的山賊大王，學生們則像從各處抓來的奴役。培雅已經習慣當作沒看見，更別提向生教組長問好，刻意遠遠避開，直接走往教室。<br />
+
+									<br />
+
+									　　教室的桌椅歪七扭八地排列，同學依著各自的小圈圈聚在一塊吃早餐大聲聊天。在班上被刻意孤立的培雅獨自一人，拿出課本溫習。她在過去的班級都是前三名的成績，更有校排前二十名的實力。可是因為臨時轉進，所以沒有被編入這所國中的前段班，反而被分進不看重成績只求學生不要鬧事的班級。<br />
+
+									<br />
+
+									　　雖然是面臨基本學力測驗的重要關頭，周圍的同學卻完全沒有緊張感，只顧著嘻嘻哈哈地打混度日。培雅沒有被環境影響而鬆懈，依然對自己有所要求，上課總是最專心聽講，課本也寫滿筆記。當然這是指遇到願意認真授課的老師的情況，反之就選擇自習。不過，課本之所以皺摺累累跟她勤做筆記沒有關係，而是另有原因。<br />
+
+									<br />
+
+									　　「喂，資優生，一早就在用功？很會裝喔。」隨著不客氣的嘲弄，培雅的課本被粗暴地掃落。取而代之出現在桌面的是一個戴滿夜市販售的廉價戒指跟手環的手掌，其中幾根手指還塗著很不均勻的黑色指甲油。<br />
+
+									<br />
+
+									　　培雅壓抑著怒氣抬頭。黑色指甲的主人是留著齊瀏海妹妹頭的女生，旁邊還圍著幾名嘍囉樣的女同學，露出看好戲神情的她們全都摀嘴笑著。<br />
+
+									<br />
+
+									　　帶頭的齊瀏海妹妹頭女生雙手交疊在胸前，站著小混混必備的三七步。還是國中生的她為自己取了「鬼妹」這種煞氣十足的綽號。「就說你很會裝，被說中不高興嗎？」<br />
+
+									<br />
+
+									　　培雅默默起身，打算撿回課本，結果被鬼妹一把推回位子上。「上次的事還沒跟你算。放學到西棟的廁所來，知道嗎？你敢不來試試看。」<br />
+
+									<br />
+
+									　　撂完話的鬼妹囂張地揚長而去，不忘一腳踩過張培雅的課本。嘍囉們如訓練有素的忠犬跟在她的身後，回到教室一角屬於她們的小圈圈，隨後傳來各種刺耳的嘲諷。<br />
+
+									<br />
+
+									　　「哈哈哈，你們講話很賤欸！」「她才是賤貨好嗎？有夠愛演。」「臭三八、臭三八。」「放學一定要好好教訓她。去叫二班的人也準備一下。」<br />
+
+									<br />
+
+									<br />
+
+
+
+									&nbsp;</p>
+							</div>
+							<!--story 結束-->
+
+							<!--part_menu_1 開始-->
+							<div class="part_menu_1 clearfix">
+								<a class="btn message scrollgo" href="#" rel=".fb-comments">點這裡，留個言吧!</a>
+								<a class="btn fb" href="#">facebook</a>
+								<a class="btn twitter" href="#">twitter</a>
+								<a class="btn weibo" href="#">Weibo</a>
+								<a class="btn fb_messenger" href="#">fb-messenger</a>
+								<a class="btn line" href="#">line</a>
+							</div>
+							<!--part_menu_1 結束-->
+
+							<!--版權-->
+							<p class="note">※本文版權所有，非經授權，不得轉載。<a
+									href="http://www.ettoday.net/member/clause_copyright.php"
+									target="_blank">[ETtoday著作權聲明]</a>※</p>
+							<!--版權-->
+
+						</div>
+						<!--subject_article 結束-->
+
+						<!--menu_page_2 開始-->
+						<div class="menu_page_2">
+							<span class="disabled"> &lt;&lt;</span>
+							<span class="current" href="#?page=1">第1章</span>
+							<a href="news_1.htm">第2章</a>
+							<a href="https://www.mirrorfiction.com/zh-Hant" target="_blank">第3章</a>
+							<a href="#"> &gt;&gt; </a>
+						</div>
+						<!--menu_page_2 結束-->
+
+						<!--menu_page_3 開始-->
+						<div class="menu_page_3">
+							<span class="disabled">&lt;&lt;</span>
+							<span class="disabled">&lt;</span>
+							<span class="current" href="#?page=1">第1章</span>
+							<a href="news_1.htm">第2章</a>
+							<a href="https://www.mirrorfiction.com/zh-Hant" target="_blank">第3章</a>
+							<a href="#"> &gt;</a>
+							<a href="#"> &gt;&gt; </a>
+						</div>
+						<!--menu_page_3 結束-->
+
+						<!--推薦閱讀 block_1 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<h2>推薦閱讀</h2>
+							</div>
+							<!--block_title 結束-->
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!--part_list_2 開始-->
+								<div class="part_list_2">
+									<h3><a href="news.htm">光明行光明行光明行光明行光明行光明行光明行光明行光明行光明行</a></h3>
+									<h3><a href="news.htm">惡鬼社區</a></h3>
+									<h3><a href="news.htm">獻給殺人魔的居家清潔指南</a></h3>
+									<h3><a href="news.htm">鬼魅豪宅</a></h3>
+									<h3><a href="news.htm"></i>我台北故事</a></h3>
+									<h3><a href="news.htm">上流兒童</a></h3>
+								</div>
+								<!--part_list_2 結束-->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--推薦閱讀 block_1 結束-->
+
+						<!--讀者迴響 block_1 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<h2>讀者迴響</h2>
+							</div>
+							<!--block_title 結束-->
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!--FB 留言板 開始-->
+								<div class="fb-comments" data-href="https://www.ettoday.net/news/20190503/1436056.htm"
+									data-numposts="5" data-colorscheme="light"></div>
+								<!--FB 留言板 結束-->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--讀者迴響 block_1 結束-->
+
+					</div>
+					<!--c1 結束-->
+
+					<!--c2 開始-->
+					<div class="c2">
+
+						<!--熱門文章 block_1 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<h2>鏡文學 熱門作品</h2>
+							</div>
+							<!--block_title 開始-->
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!--part_list_2 開始-->
+								<div class="part_list_2">
+									<h3><a href="news.htm">曾經，那女孩</a></h3>
+									<h3><a href="news.htm">魔界巡守日誌</a></h3>
+									<h3><a href="news.htm">壞孩子</a></h3>
+									<h3><a href="news.htm">赤壁記</a></h3>
+									<h3><a href="news.htm">勇者不再</a></h3>
+									<h3><a href="news.htm">不能讓老師發現的霸凌日記不能讓老師發現的霸凌日記</a></h3>
+									<h3><a href="news.htm">光明行</a></h3>
+									<h3><a href="news.htm">惡鬼社區</a></h3>
+									<h3><a href="news.htm">獻給殺人魔的居家清潔指南</a></h3>
+									<h3><a href="news.htm">鬼魅豪宅鬼魅豪宅鬼魅豪宅鬼魅豪宅鬼魅豪宅鬼魅豪宅鬼魅豪宅</a></h3>
+								</div>
+								<!--part_list_2 結束-->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--熱門文章 block_1 結束-->
+
+						<!--最新文章 block_1 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<h2>鏡文學 最新作品</h2>
+							</div>
+							<!--block_title 開始-->
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!--part_list_2 開始-->
+								<div class="part_list_2">
+									<h3><a href="news.htm">光明行</a></h3>
+									<h3><a href="news.htm">惡鬼社區</a></h3>
+									<h3><a href="news.htm">獻給殺人魔的居家清潔指南</a></h3>
+									<h3><a href="news.htm">鬼魅豪宅</a></h3>
+									<h3><a href="news.htm">台北故事</a></h3>
+									<h3><a href="news.htm">上流兒童</a></h3>
+									<h3><a href="news.htm">曾經，那女孩</a></h3>
+									<h3><a href="news.htm">魔界巡守日誌</a></h3>
+									<h3><a href="news.htm">壞孩子</a></h3>
+									<h3><a href="news.htm">赤壁記</a></h3>
+								</div>
+								<!--part_list_2 結束-->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--最新文章 block_1 結束-->
+
+						<!--Facebook block_1 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<h3>鏡文學 Facebook</h3>
+							</div>
+							<!--block_title 結束-->
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!-- FB粉絲團 開始 -->
+								<div class="fb-page" data-href="https://www.facebook.com/mirrorfiction/"
+									data-width="280" data-small-header="false" data-adapt-container-width="true"
+									data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+									<div class="fb-xfbml-parse-ignore">
+										<blockquote cite="https://www.facebook.com/mirrorfiction/"><a
+												href="https://www.facebook.com/mirrorfiction/">鏡文學</a></blockquote>
+									</div>
+								</div>
+								<!-- FB粉絲團 結束 -->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--Facebook block_1 結束-->
+
+					</div>
+					<!--c2 結束-->
+
+				<!-- InstanceEndEditable -->
+				</div>
+				<!--r1 結束-->	
+			</div>
+			<!--container 結束-->
+		</div>
+		<!--container_box 結束-->
+		
+		<!--footer_box 開始-->
+		<div class="footer_box">
+			<!--footer 開始-->
+			<div class="footer">
+				<!--menu_1 開始-->
+				<div class="menu_1">
+					<a href="mailto:editor@ettoday.net">我要投稿</a> |
+					<a href="//smarturl.it/ettoday-104" target="_blank">人才招募</a> | 
+					<a href="//events.ettoday.net/about-ettoday/index.htm" target="_blank">關於我們</a>|
+					<br>
+					<a href="mailto:service@ettoday.net">廣告刊登/合作提案</a> |
+					<a href="mailto:service@ettoday.net">客服信箱</a> |
+					<a href="//www.ettoday.net/member/clause_member.php" target="_blank">服務條款</a> |
+					<br>
+					<a href="//www.ettoday.net/member/clause_privacy.php" target="_blank">隱私權政策</a> |
+					<a href="//www.ettoday.net/member/clause_copyright.php" target="_blank">著作權聲明</a> |
+					<a href="//www.ettoday.net/member/clause_duty.php" target="_blank">免責聲明</a>
+				</div>
+				<!--menu_1 結束-->
+				<address>
+					東森新媒體控股股份有限公司 版權所有<br> &copy; <a href="http://www.ettoday.net/" target="_top">ETtoday.net</a> All Rights Reserved.
+				</address>
+			</div>
+			<!--footer 結束-->
+		</div>
+		<!--footer_box 結束-->
+		
+		<!--滾回上面 gototop 開始-->
+		<div class="gototop">回到頂部</div>
+		<!--滾回上面 gototop 開始-->
+		
+	</div>
+	<!--wrapper 結束-->
+	</div>
+	<!--wrapper_box 結束-->
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,38 @@
+/* 模組 新聞內頁 分享按鈕====*/
+#et_sticky_pc{ width:50px; height:0px;/*彈性高度*/ position:fixed; left:50%; top:5px; margin-left:-550px; z-index:20; overflow:hidden; transition:height 0.6s ease-in-out;}
+#et_sticky_pc a.btn{ display:block; width:40px; height:40px; background: url(../images/et_sticky_pc.png) no-repeat; background-size:auto 100%; text-indent:100%; white-space:nowrap; overflow:hidden; border-radius:50%; margin-bottom:5px; box-shadow:0px 1px 3px 0px rgba(0, 0, 0, 0.1);}
+#et_sticky_pc a.btn.logo{ background-position:0px 0px;}
+#et_sticky_pc a.btn.fb{ background-position:-40px 0px;}
+#et_sticky_pc a.btn.weibo{ background-position:-80px 0px;}
+#et_sticky_pc a.btn.twitter{ background-position:-120px 0px;}
+#et_sticky_pc a.btn.gplus{ background-position:-160px 0px;}
+#et_sticky_pc a.btn.link{ background-position:-200px 0px;}
+
+
+/*模組 新聞內頁 吸住區塊：麵包屑+社群分享==============*/
+#et_sticky{ width:100%; height:45px; position:fixed; left:0px; top:-300px; z-index:45; background: #fff; box-shadow:0px 0px 2px 1px rgba(0,0,0,0.2); }
+
+/*et_sticky 麵包屑*/
+#et_sticky .part_breadcrumb_2{ display:block; position:absolute; left:10px; top:12px; font-size:13px;}
+#et_sticky .part_breadcrumb_2 .menu_bread_crumb > div{ display:inline-block;}
+#et_sticky .part_breadcrumb_2 .menu_bread_crumb > div:not(:nth-of-type(1)) * { display:none;}/*麵包屑保留1層*/
+#et_sticky .part_breadcrumb_2 .menu_bread_crumb > div:nth-last-child(1){ font-weight:bold;}
+
+/*et_sticky 社群分享 */
+#et_sticky .sharebox_1{ clear:both; margin-bottom:10px; transform:scale(1.2); position:absolute; right:10px; top:7px;}
+#et_sticky .sharebox_1 .menu_1 a{ display:inline-block; width:30px; height:30px; border-radius:50%; background-size:150% auto; overflow:hidden;}
+
+#et_sticky .sharebox_1 .menu_2{ display:none;}
+
+/*sharebox_1*/
+.sharebox_1 .menu_1{ float:left; width:auto; height:30px; margin-right:10px;}
+.sharebox_1 .menu_1 a{ display:inline-block; width:45px; height:30px; background: url(../images/social_01.jpg) no-repeat; background-size:100% auto; border-radius:3px;}
+.sharebox_1 .menu_1 a.fb{ background-position:center 0px;}
+.sharebox_1 .menu_1 a.fb-messenger{ background-position:center -30px;}
+.sharebox_1 .menu_1 a.line{ background-position:center -60px;}
+.sharebox_1 .menu_1 a.weibo{ background-position:center -120px; display:none;}
+
+@media only screen and (min-width: 1000px){
+	.sharebox_1 .menu_1 a.fb-messenger{ display:none;}
+	.sharebox_1 .menu_1 a.weibo{ display:inline-block; background-position:center -120px;}
+}

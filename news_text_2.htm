@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/layout.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link rel="apple-touch-icon" sizes="180x180" href="//cdn2.ettoday.net/style/mobileweb2014/images/touch-icon.png" />
+<link rel="shortcut icon" sizes="192x192" href="//cdn2.ettoday.net/style/mobileweb2014/images/touch-icon.png" />
+
+<!--css js 共用 開始-->
+<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/common.js"></script>
+<!--css js 共用 結束-->
+
+<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Ettoday 鏡文學 新聞頁</title>
+	<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+	<!-- InstanceEndEditable -->
+</head>
+<body class="news-page">
+<!--FB plugins 共用元素 開始 -->	
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=146858218737386";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--FB plugins 共用元素 結束 -->
+	<!--wrapper_box 開始-->
+	<div class="wrapper_box">
+	<!--wrapper 開始-->
+	<div class="wrapper">
+	<!-- InstanceBeginEditable name="EditRegion5" -->
+			<!-- 模組 新聞內頁 分享按鈕 開始 -->
+			<div id="et_sticky_pc">
+				<ul>
+					<li><a class="btn logo" href="https://www.ettoday.net/" title="回首頁">回首頁</a></li>
+					<li><a class="btn fb" href="javascript:;" title="facebook"
+							onclick="location.href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href)"
+							target="_blank">facebook</a></li>
+					<li><a class="btn weibo" href="javascript:;" target="_blank" title="weibo">weibo</a></li>
+					<li><a class="btn twitter"
+							href="javascript: void(window.open('http://twitter.com/home/?status=' .concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"
+							title="twitter">twitter</a></li>
+					<li><a class="btn link" href="javascript:;" title="複製連結">複製連結</a></li>
+				</ul>
+			</div>
+			<!-- 模組 新聞內頁 分享按鈕 結束 -->
+
+			<!--et_sticky 模組-置頂吸住 開始-->
+			<div id="et_sticky">
+				<!--part_breadcrumb_2 麵包屑 開始-->
+				<div class="part_breadcrumb_2 clearfix">
+					<!--麵包屑 開始-->
+					<div class="menu_bread_crumb clearfix">
+						<!-- 第一層 開始 -->
+						<div>
+							<a href="https://www.ettoday.net/">
+								<span>ETtoday新聞雲</span>
+							</a>
+						</div>
+						<!-- 第一層 結束 -->
+						&gt;
+						<!-- 第二層 開始 -->
+						<div>
+							<a href="#">
+								<span>ETtoday鏡文學</span>
+							</a>
+						</div>
+						<!-- 第二層 結束 -->
+					</div>
+					<!--麵包屑 結束-->
+				</div>
+				<!-- part_breadcrumb_2 麵包屑 結束-->
+			</div>
+			<!--et_sticky 模組-置頂吸住 結束-->
+
+			<!-- InstanceEndEditable -->
+		
+		<!--side 側欄選單 開始-->
+		<div class="side">
+			<!--btn_close 關閉側欄按鈕-->
+			<div class="btn_close">選單關閉</div>
+			<!--btn_close 關閉側欄按鈕-->
+			
+			<!--手機 logo_mirror_m 開始 -->
+			<div class="logo_mirror_m"><a href="index.htm" title="ETtoday鏡文學">ETtoday鏡文學</a></div>
+			<!--手機 logo_mirror_m 開始 結束 -->
+			
+			<!--inner 開始-->
+		　	<div class="inner">
+				<!--nav_2 開始-->
+				<ul class="nav_2 clearfix">
+					<li><a href="category.htm">愛情</a></li>
+					<li><a href="category.htm">青春校園</a></li>
+					<li><a href="category.htm">靈異鬼怪</a></li>
+					<li><a href="category.htm">奇幻</a></li>
+					<li><a href="category.htm">科幻科技</a></li>
+					<li><a href="category.htm">仙俠玄幻</a></li>
+					<li><a href="category.htm">武俠</a></li>
+					<li><a href="category.htm">恐怖驚悚</a></li>
+					<li><a href="category.htm">推理犯罪</a></li>
+					<li><a href="category.htm">文學/寫實</a></li>
+					<li><a href="category.htm">LGBT</a></li>
+					<li><a href="category.htm">歷史</a></li>
+				</ul>
+				<!--nav_2 開始-->
+				<!--footer_side 開始-->
+				<div class="footer_side">
+					<a href="//events.ettoday.net/about-ettoday/index.htm" target="_blank">關於我們</a>
+					|
+					<a href="mailto:service@ettoday.net">聯絡信箱</a>
+					|
+					<a href="https://www.ettoday.net/events/app/index.htm?from=ettodaymw-sidebar">App下載</a>
+					<p>東森新媒體控股股份有限公司 版權所有<br>
+						非經授權，不許轉載本網站內容<br>
+						© ETtoday.net All Rights Reserved.</p>
+				</div>
+				<!--footer_side 結束-->
+		　	</div>
+		　	<!--inner 結束-->
+		</div>
+		<!--side 側欄選單 結束-->
+		
+		<!--topbar_box 開始-->
+		<div class="topbar_box">
+			<!--topbar 開始-->
+			<div class="topbar">
+				<!--menu_1 開始-->
+				<div class="menu_1">
+					<a href="http://www.ettoday.net/" target="_blank">ETtoday新聞雲</a>
+					│
+					<a href="http://www.ettoday.net/events/app/ettoday_app.htm" target="_blank">新聞雲Apps</a>
+				</div>
+				<!--menu_1 結束-->
+			</div>
+			<!--topbar 結束-->
+		</div>
+		<!--topbar_box 結束-->
+		
+		<!--header_box 開始-->
+		<div class="header_box">
+			<!--header 開始-->
+			<div class="header">
+				<!--btn_side_open 開始-->
+				<div class="btn_open">選單開啟</div>
+				<!--btn_side_open 結束-->
+
+				<!--logo_mirror 開始-->
+				<div class="logo_mirror">
+					<a href="index.htm" title="回首頁">ETtoday 鏡文學</a>
+				</div>
+				<!--logo_mirror 結束-->
+				<!--nav_1 選單 開始-->
+				<div class="nav_1">
+					<!--inner 開始-->
+					<ul class="inner">
+						<li><a href="category.htm">愛情</a></li>
+						<li><a href="category.htm">青春校園</a></li>
+						<li><a href="category.htm">靈異鬼怪</a></li>
+						<li><a href="category.htm">奇幻</a></li>
+						<li><a href="category.htm">科幻科技</a></li>
+						<li><a href="category.htm">仙俠玄幻</a></li>
+						<li><a href="category.htm">武俠</a></li>
+						<li><a href="category.htm">恐怖驚悚</a></li>
+						<li><a href="category.htm">推理犯罪</a></li>
+						<li><a href="category.htm">文學/寫實</a></li>
+						<li><a href="category.htm">LGBT</a></li>
+						<li><a href="category.htm">歷史</a></li>
+					</ul>
+					<!--inner 結束-->
+				</div>
+				<!--nav_1 選單 結束-->
+			</div>
+			<!--header 結束-->
+		</div>
+		<!--header_box 結束-->
+		
+		<!--container_box 開始-->
+		<div class="container_box">
+			<!--container 開始-->
+			<div class="container">
+				<!--r1 開始-->
+				<div class="r1 clearfix">
+				<!-- InstanceBeginEditable name="EditRegion1" -->
+					<!--c1 開始-->
+					<div class="c1">
+						<!-- breadcrumb_box 開始-->
+						<div class="breadcrumb_box clearfix">
+							<!--麵包屑 開始-->
+							<div class="part_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+								<!-- 第一層 開始-->
+								<div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+									<a itemscope itemtype="https://schema.org/Thing" itemprop="item"
+										href="https://www.ettoday.net">
+										<span itemprop="name">ETtoday新聞雲</span>
+									</a>
+									<meta itemprop="position" content="1" />
+								</div>
+								<!-- 第一層 結束-->
+								&gt;
+								<!-- 第二層 開始-->
+								<div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+									<a itemscope itemtype="https://schema.org/Thing" itemprop="item" href="index.htm">
+										<span itemprop="name">ETtoday鏡文學</span>
+									</a>
+									<meta itemprop="position" content="2" />
+								</div>
+								<!-- 第二層 結束-->
+								&gt;
+								<!-- 第三層 結束-->
+								<div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a
+										itemscope="itemscope" itemtype="https://schema.org/Thing" itemprop="item"><span
+											itemprop="name">推理犯罪</span></a>
+									<meta itemprop="position" content="3" />
+								</div>
+								<!-- 第三層 結束-->
+							</div>
+							<!--麵包屑 結束-->
+						</div>
+						<!-- breadcrumb_box 結束-->
+
+						<!--subject_article 開始-->
+						<div class="subject_article">
+							<header>
+								<h1 class="title">獻給殺人魔的居家清潔指南</h1>
+							</header>
+
+							<!--operate_1 開始-->
+							<div class="operate_1">
+								<!--sharebox_1 開始-->
+								<div class="sharebox_1 clearfix">
+									<!--menu_1 開始-->
+									<div class="menu_1 clearfix">
+										<a class="fb" href="#" target="_blank"></a>
+										<a class="fb-messenger" href="#"></a>
+										<a class="line" href="#"></a>
+										<a class="weibo" href="#"></a>
+									</div>
+									<!--menu_1 結束-->
+									<!--menu_2 開始-->
+									<div class="menu_2 clearfix">
+										<!--fb讚 開始-->
+										<div class="fb-like" data-href="#" data-layout="button_count" data-action="like"
+											data-show-faces="false" data-share="false"></div>
+										<!--fb讚 結束-->
+									</div>
+									<!--menu_2 結束-->
+								</div>
+								<!--sharebox_1 結束-->
+
+								<!--限制級 標誌-->
+								<p class="icon_adult">
+									<script src="//static.ettoday.net/style/adult/adult-alert.js"></script>
+									<link href="//cdn2.ettoday.net/style/adult/adult-alert.css" rel="stylesheet"
+										type="text/css">
+								</p>
+								<!--限制級 標誌-->
+							</div>
+							<!--operate_1 結束-->
+
+							<!--date 開始-->
+							<span class="date">
+								<time itemprop="datePublished" datetime="2019-04-22T14:37:00+08:00">2019年04月22日
+									14:37</time>
+							</span>
+							<!--date 結束-->
+
+							<!--story 開始-->
+							<div class="story" itemprop="articleBody">
+								<p>（二）披薩沒有沾血，我確認過了</p>
+								<p><br />
+
+									　　曉君默不作聲地吃著披薩。雖然衣服溼透，但在悶熱的屋內正好涼快。照理說她應該儘快離開這裡，但礙於少年的身份未明，她決定暫且乖乖配合，然後再找機會逃走。<br />
+
+									&nbsp;<br />
+
+									　　披薩是經典的夏威夷口味，蝦仁跟鳳梨塊莫名地合拍，而且美味。剛開始曉君很客氣地小口咬著，但被綁架的她已經兩天沒進食，披薩下肚才終於驚覺有多飢餓，一不留神便狼吞虎嚥起來。手上的披薩瞬間消失。<br />
+
+									&nbsp;<br />
+
+									　　她猶豫該怎麼開口。少年雖然顧著挑去披薩上的鳳梨塊，倒也心思細膩：「我不餓，你盡量吃沒關係。」<br />
+
+									&nbsp;<br />
+
+									　　於是曉君拿了第二塊、接著是第三塊&hellip;&hellip;直到不小心打起飽嗝。她漲紅著臉，困窘地別過頭去。<br />
+
+									&nbsp;<br />
+
+									　　少年根本不在意，將挑光鳳梨的披薩隨意扔進垃圾桶，抽出濕紙巾擦手，接著在掌心倒了清潔酒精，抹乾，才戴回黑色皮手套。<br />
+
+									&nbsp;<br />
+
+									　　這人是不是有潔癖？曉君好奇。<br />
+
+									&nbsp;<br />
+
+									　　她不時偷瞄少年，他是救命恩人沒錯，但怎麼會闖進這裡？她直覺認定少年不是這裡的住戶，因為他太乾淨，跟這陰暗骯髒的屋子完全不同。<br />
+
+									&nbsp;<br />
+
+									　　什麼樣的人造就出什麼樣的環境，曉君深信這點。不過不代表少年跟綁匪沒關係。<br />
+
+									　<br />
+
+									　　曉君注意到玄關旁的大袋子，實在過於醒目，像是電影裡常見的裝屍袋。該報警嗎？他會不會反過來對自己不利？<br />
+
+									&nbsp;<br />
+
+									　　少年突然起身，曉君緊張地脫口而出：「我什麼都不會說出去，我會當成什麼都不知道！」<br />
+
+									&nbsp;<br />
+
+									　　但少年恍若未聞地打開電視旁的冰箱。「要喝可樂嗎？」<br />
+
+									&nbsp;<br />
+
+									　　「冰透的嗎？」曉君不假思索地反問，發現冰箱中除了可樂，另外還有裝在塑膠袋裡的肉塊，隱隱約約飄散出異味。<br />
+
+									&nbsp;<br />
+
+									　　少年找來玻璃杯，先用消毒酒精擦拭過才用清水沖洗。曉君雖然覺得過於講究，但玻璃杯的確有點髒，杯面沾滿指紋跟霧似的污垢。<br />
+
+									&nbsp;<br />
+
+									　　曉君接過可樂，指尖傳來的冰涼感讓她毫不猶豫地一口氣喝乾，發出痛快的嘆息，彷彿暢飲啤酒。然後又忍不住打了嗝。<br />
+
+									&nbsp;<br />
+
+									　　「抱歉。」曉君再次羞紅了臉，沉默一陣後才提議：「是不是應該趕快離開這裡比較好？萬一那人回來了&hellip;&hellip;」<br />
+
+									&nbsp;<br />
+
+									　　「他一直都在。」少年又替她倒滿可樂。<br />
+
+									&nbsp;<br />
+
+									　　「什麼？」曉君一驚，手裡的可樂濺了出來。<br />
+
+									&nbsp;<br />
+
+									　　少年微微皺眉，他剛剛才拖過地板。<br />
+
+									&nbsp;<br />
+
+									　　「假裝什麼都不知道就好，假裝自己沒被綁架。現在沒事了，就當什麼都沒發生。」少年望著曉君，這是第一次兩人目光相交。<br />
+
+									&nbsp;<br />
+
+									　　曉君明白他的意思，但不報警真的可以嗎？任由綁匪逍遙法外，後續會導致多少人受害。若她沒有被少年發現，之後下場會如何？光想像就不寒而慄。<br />
+
+									&nbsp;<br />
+
+									　　但若再細想，如果是少年委託他人綁架，卻假裝把自己救了出來，之後要趁自己毫無防備再下手呢？不能排除這樣的可能。<br />
+
+									&nbsp;<br />
+
+									　　有些人懷著嗜虐的心，酷愛以各種方式玩弄被害者，從天堂掉入地獄也是一招。<br />
+
+									&nbsp;<br />
+
+									　　曉君不得不提防眼前的少年，這人太鎮定了。雖然似乎是個大學生，卻沒有這年紀該有的青澀或吊兒郎當，而是沉穩異常，好像無法激起漣漪的平靜湖面。那對瞳孔是沒有雜質的黑，彷彿無暇的黑玉。<br />
+
+									&nbsp;<br />
+
+									　　清秀，是曉君第一眼見到他會給的評語，但不顯得柔弱。她害怕藏在少年皮囊下的是怎樣的意圖？虧他長得很好看，卻不能輕易相信，太可惡了。<br />
+
+									&nbsp;<br />
+
+									　　曉君的思緒亂轉，最後試探地問：「如果我還是認為報警比較妥當呢？」<br />
+
+									&nbsp;<br />
+
+									　　「別作傻事，」少年說：「這等於把你暴露出來。他們會找到你，逮住你，逼問過程。最後你會變成冰箱裡那袋肉。」<br />
+
+									&nbsp;<br />
+
+									　　他們？那袋肉？曉君愕然。<br />
+
+									&nbsp;<br />
+
+									　　「那是人肉。」<br />
+
+									&nbsp;<br />
+
+									　　曉君幾乎要吐了，她居然喝下跟人肉冰在一起的可樂！她驚恐地扔掉杯子，彷彿手裡抓的是隻活生生的大蟑螂。同時，她終於發現披薩紙盒外的點點血跡。<br />
+
+									&nbsp;<br />
+
+									　　曉君捂著嘴，狂奔進廁所大吐特吐。<br />
+
+									&nbsp;<br />
+
+									　　難怪少年一口都沒有吃！<br />
+
+									&nbsp;<br />
+
+									　　曉君反覆漱口好幾次，才帶著怒氣回來，劈頭就罵：「居然騙我吃沾血的披薩！我看起來就這麼好欺負嗎？」<br />
+
+									&nbsp;<br />
+
+									　　「你看起來餓了。」少年又擺出問她要不要吃披薩時的無辜表情。<br />
+
+									&nbsp;<br />
+
+									　　曉君崩潰大罵：「餓也不能吃這種東西啊！那是人的血液耶，萬一有傳染病怎麼辦？為什麼偏偏是我碰上這麼多倒楣的事，先是颱風天沒得休假、看完電影被人迷昏、還喝了放在人肉旁邊的可樂！我很喜歡可樂，你知道嗎！以後都不敢喝該怎麼辦&hellip;&hellip;嗚&hellip;&hellip;」她委屈地捂臉痛哭，為什麼一堆倒楣事都發生在自己身上。<br />
+
+									&nbsp;<br />
+
+									　　「披薩沒有沾到血，我確認過。」少年說得輕鬆，從沙發後拿出曉君的手提袋，遞還給她。曉君只顧著哭，根本無心理會。<br />
+
+									&nbsp;<br />
+
+									　　少年提醒：「該離開了。」<br />
+
+									&nbsp;<br />
+
+									　　曉君抹去眼淚，但淚珠還是一直從眼眶裡滾出。她從少年手中抓過手提袋，頭也不回地開門離去。途中踢到門邊的大袋子，那偏軟的觸感讓她知道猜測的沒錯，袋子裡裝的是人。<br />
+
+									&nbsp;<br />
+
+									　　少年遠比她所想像得更危險。<br />
+
+									&nbsp;<br />
+
+									　　該逃了，曉君開始奔跑。衝出這棟樓時，外頭的陽光令她險些睜不開眼睛，她無法克制地流淚，也許是久待陰暗的環境卻突然受到光線刺激的緣故，也可能是逃脫後的虛脫感。被綁架兩日，再次回歸現實已是恍如隔世。<br />
+
+									&nbsp;<br />
+
+									　　她在街頭慌張地攔下計程車，然後消失在早晨逐漸擁擠的車流。<br />
+
+									&nbsp;<br />
+
+									<br />
+
+									＊<br />
+
+									&nbsp;<br />
+
+									　　少年一手拿著拖把，將潑灑的可樂清理乾淨。另一手操作手機，撥出號碼，響鈴三聲後立刻掛斷，並在五秒內再次撥出同樣的號碼。<br />
+
+									&nbsp;<br />
+
+									　　電話接通，另一頭沒有聲音。<br />
+
+									&nbsp;<br />
+
+									　　「一具。」少年報出陳伯家的地址後特別聲明。對方就此掛斷。<br />
+
+									&nbsp;<br />
+
+									　　等待之餘，少年將冰箱的人肉整袋拎出來，一起放進裝著陳伯屍體的大袋子。然後他想起浴室的鏡子有點髒。<br />
+
+									&nbsp;<br />
+
+									　　不過當少年站在浴室的鏡子前，望著鏡中的影像，卻突然發狠將整面鏡子扯下，奮力往浴缸砸落。噴飛的鏡面碎片凌亂四散，每一片都有少年的倒影。<br />
+
+									&nbsp;<br />
+
+									　　少年若無其事地退出浴室。返回客廳時，等待的對象已經到了。<br />
+
+									&nbsp;<br />
+
+									　　門外是個戴著棒球帽、穿著宅急便制服的高壯男人。<br />
+
+									&nbsp;<br />
+
+									　　彼此沒有多餘的招呼，男人不發一語地搬進一個大紙箱，裡面藏著差不多體積的空金屬箱，原來紙箱只是掩護。裝著陳伯的袋子被男人輕鬆對折，袋裡的屍體發出骨裂的聲響，然後被塞進鐵箱，貼上封箱膠帶。<br />
+
+									&nbsp;<br />
+
+									　　如果不知道裡面裝的是屍體，簡直跟宅急便上門取貨沒有不同。<br />
+
+									&nbsp;<br />
+
+									　　始終沉默的男人抱起箱子，省略多餘道別就離開了。少年也沒有說話。共同的默契讓兩人無須多言。少年通知，男人負責收貨。<br />
+
+									&nbsp;<br />
+
+									　　男人前腳剛走，少年的手機就響了。<br />
+
+									&nbsp;<br />
+
+									　　「『收購商』到了？」<br />
+
+									&nbsp;<br />
+
+									　　「剛走。」<br />
+
+									&nbsp;<br />
+
+									　　「還是一樣有效率。這次的對象無誤吧？」那人笑了，「希望你沒有要回答的打算，因為我提供的情報一向準確。不過，十年，你以為得花多久時間才能達成目標？」<br />
+
+									&nbsp;<br />
+
+									　　十年並非是指達成的預估時間，而是指少年，同時也是他唯一的稱呼。少年沒有名字，一出生就被遺棄、沒有登記戶口的孤兒沒有名字。<br />
+
+									&nbsp;<br />
+
+									　　十年回答：「不計時間，不計代價。」<br />
+
+									&nbsp;<br />
+
+									　　「我會繼續提供情報給你。我很好奇，是我的情報網更靈通，或是你的直覺更敏銳？你總是可以區辨出來這些人的不同。」<br />
+
+									&nbsp;<br />
+
+									　　「看的。他們就是不一樣。」<br />
+
+									&nbsp;<br />
+
+									　　「天賦異稟。神賜的禮物。」那人說得戲謔，結束通話。<br />
+
+									&nbsp;<br />
+
+									　　十年還沒有離開陳伯的家，他在屋內唯一一台電腦前坐下。未關機的電腦螢幕顯示的是網路頁面，但若細瞧，可以發現全然不是那麼一回事。<br />
+
+									&nbsp;<br />
+
+									　　這是「暗網」。<br />
+
+									&nbsp;<br />
+
+									　　關於暗網的傳言很多，這個混亂失序的空間裡充斥著殺手、駭客、虐殺秀、黑市交易、人口買賣、邪教&hellip;&hellip;以及所有想像得到與想像不到的可怕東西。<br />
+
+									&nbsp;<br />
+
+									　　要進入暗網需要特定的手段，與一般點開瀏覽器自動連上Google是截然兩回事，只有知道門路的人才能探訪。<br />
+
+									&nbsp;<br />
+
+									　　所有見不得光的怪物，都可以在暗網明目張膽地橫行。<br />
+
+									　　<br />
+
+									　　十年點進頁面其中一個連結，瀏覽器的畫面轉黑，浮現斗大的紅字。<br />
+
+									&nbsp;<br />
+
+									　　WE ARE JACK.<br />
+
+									<br />
+
+									<br />
+								</p>
+							</div>
+							<!--story 結束-->
+
+							<!--part_menu_1 開始-->
+							<div class="part_menu_1 clearfix">
+								<a class="btn message scrollgo" href="#" rel=".fb-comments">點這裡，留個言吧!</a>
+								<a class="btn fb" href="#">facebook</a>
+								<a class="btn twitter" href="#">twitter</a>
+								<a class="btn weibo" href="#">Weibo</a>
+								<a class="btn fb_messenger" href="#">fb-messenger</a>
+								<a class="btn line" href="#">line</a>
+							</div>
+							<!--part_menu_1 結束-->
+
+							<!--版權-->
+							<p class="note">※本文版權所有，非經授權，不得轉載。<a
+									href="http://www.ettoday.net/member/clause_copyright.php"
+									target="_blank">[ETtoday著作權聲明]</a>※</p>
+							<!--版權-->
+
+						</div>
+						<!--subject_article 結束-->
+
+						<!--menu_page_2 開始-->
+						<div class="menu_page_2">
+							<span class="disabled"> &lt;&lt;</span>
+							<a href="#?page=1">第1章</a>
+							<span class="current" href="#?page=2">第2章</span>
+							<a href="https://www.mirrorfiction.com/zh-Hant" target="_blank">第3章</a>
+							<a href="#"> &gt;&gt; </a>
+						</div>
+						<!--menu_page_2 結束-->
+
+						<!--menu_page_3 開始-->
+						<div class="menu_page_3">
+							<span class="disabled">&lt;&lt;</span>
+							<span class="disabled">&lt;</span>
+							<a href="news.htm">第1章</a>
+							<span class="current" href="#?page=2">第2章</span>
+							<a href="https://www.mirrorfiction.com/zh-Hant" target="_blank">第3章</a>
+							<a href="#"> &gt;</a>
+							<a href="#"> &gt;&gt; </a>
+						</div>
+						<!--menu_page_3 結束-->
+
+						<!--推薦閱讀 block_1 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<h2>推薦閱讀</h2>
+							</div>
+							<!--block_title 結束-->
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!--part_list_2 開始-->
+								<div class="part_list_2">
+									<h3><a href="news.htm">光明行</a></h3>
+									<h3><a href="news.htm">惡鬼社區</a></h3>
+									<h3><a href="news.htm">獻給殺人魔的居家清潔指南</a></h3>
+									<h3><a href="news.htm">鬼魅豪宅</a></h3>
+									<h3><a href="news.htm"></i>我台北故事</a></h3>
+									<h3><a href="news.htm">上流兒童</a></h3>
+								</div>
+								<!--part_list_2 結束-->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--推薦閱讀 block_1 結束-->
+
+						<!--讀者迴響 block_1 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<h2>讀者迴響</h2>
+							</div>
+							<!--block_title 結束-->
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!--FB 留言板 開始-->
+								<div class="fb-comments" data-href="https://www.ettoday.net/news/20190503/1436056.htm"
+									data-numposts="5" data-colorscheme="light"></div>
+								<!--FB 留言板 結束-->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--讀者迴響 block_1 結束-->
+
+					</div>
+					<!--c1 結束-->
+
+					<!--c2 開始-->
+					<div class="c2">
+
+						<!--熱門文章 block_1 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<h2>鏡文學 熱門作品</h2>
+							</div>
+							<!--block_title 開始-->
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!--part_list_2 開始-->
+								<div class="part_list_2">
+									<h3><a href="news.htm">曾經，那女孩</a></h3>
+									<h3><a href="news.htm">魔界巡守日誌</a></h3>
+									<h3><a href="news.htm">壞孩子</a></h3>
+									<h3><a href="news.htm">赤壁記</a></h3>
+									<h3><a href="news.htm">勇者不再</a></h3>
+									<h3><a href="news.htm">不能讓老師發現的霸凌日記</a></h3>
+									<h3><a href="news.htm">光明行</a></h3>
+									<h3><a href="news.htm">惡鬼社區</a></h3>
+									<h3><a href="news.htm">獻給殺人魔的居家清潔指南</a></h3>
+									<h3><a href="news.htm">鬼魅豪宅</a></h3>
+								</div>
+								<!--part_list_2 結束-->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--熱門文章 block_1 結束-->
+
+						<!--最新文章 block_1 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<h2>鏡文學 最新作品</h2>
+							</div>
+							<!--block_title 開始-->
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!--part_list_2 開始-->
+								<div class="part_list_2">
+									<h3><a href="news.htm">光明行</a></h3>
+									<h3><a href="news.htm">惡鬼社區</a></h3>
+									<h3><a href="news.htm">獻給殺人魔的居家清潔指南</a></h3>
+									<h3><a href="news.htm">鬼魅豪宅</a></h3>
+									<h3><a href="news.htm">台北故事</a></h3>
+									<h3><a href="news.htm">上流兒童</a></h3>
+									<h3><a href="news.htm">曾經，那女孩</a></h3>
+									<h3><a href="news.htm">魔界巡守日誌</a></h3>
+									<h3><a href="news.htm">壞孩子</a></h3>
+									<h3><a href="news.htm">赤壁記</a></h3>
+								</div>
+								<!--part_list_2 結束-->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--最新文章 block_1 結束-->
+
+						<!--Facebook block_1 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<h3>鏡文學 Facebook</h3>
+							</div>
+							<!--block_title 結束-->
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!-- FB粉絲團 開始 -->
+								<div class="fb-page" data-href="https://www.facebook.com/mirrorfiction/"
+									data-width="280" data-small-header="false" data-adapt-container-width="true"
+									data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+									<div class="fb-xfbml-parse-ignore">
+										<blockquote cite="https://www.facebook.com/mirrorfiction/"><a
+												href="https://www.facebook.com/mirrorfiction/">鏡文學</a></blockquote>
+									</div>
+								</div>
+								<!-- FB粉絲團 結束 -->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--Facebook block_1 結束-->
+
+					</div>
+					<!--c2 結束-->
+
+					<!-- InstanceEndEditable -->
+				</div>
+				<!--r1 結束-->	
+			</div>
+			<!--container 結束-->
+		</div>
+		<!--container_box 結束-->
+		
+		<!--footer_box 開始-->
+		<div class="footer_box">
+			<!--footer 開始-->
+			<div class="footer">
+				<!--menu_1 開始-->
+				<div class="menu_1">
+					<a href="mailto:editor@ettoday.net">我要投稿</a> |
+					<a href="//smarturl.it/ettoday-104" target="_blank">人才招募</a> | 
+					<a href="//events.ettoday.net/about-ettoday/index.htm" target="_blank">關於我們</a>|
+					<br>
+					<a href="mailto:service@ettoday.net">廣告刊登/合作提案</a> |
+					<a href="mailto:service@ettoday.net">客服信箱</a> |
+					<a href="//www.ettoday.net/member/clause_member.php" target="_blank">服務條款</a> |
+					<br>
+					<a href="//www.ettoday.net/member/clause_privacy.php" target="_blank">隱私權政策</a> |
+					<a href="//www.ettoday.net/member/clause_copyright.php" target="_blank">著作權聲明</a> |
+					<a href="//www.ettoday.net/member/clause_duty.php" target="_blank">免責聲明</a>
+				</div>
+				<!--menu_1 結束-->
+				<address>
+					東森新媒體控股股份有限公司 版權所有<br> &copy; <a href="http://www.ettoday.net/" target="_top">ETtoday.net</a> All Rights Reserved.
+				</address>
+			</div>
+			<!--footer 結束-->
+		</div>
+		<!--footer_box 結束-->
+		
+		<!--滾回上面 gototop 開始-->
+		<div class="gototop">回到頂部</div>
+		<!--滾回上面 gototop 開始-->
+		
+	</div>
+	<!--wrapper 結束-->
+	</div>
+	<!--wrapper_box 結束-->
+</body>
+<!-- InstanceEnd --></html>
